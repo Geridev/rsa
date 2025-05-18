@@ -126,7 +126,6 @@ def decrypt_rsa_crt(ciphertext, private_exponent, p_prime, q_prime):
     return decrypted_message
 
 def sign_message(message, private_exponent, p_prime, q_prime):
-
     return decrypt_rsa_crt(message, private_exponent, p_prime, q_prime)
 
 def verify_signature(signature, public_exponent, modulus_n):
